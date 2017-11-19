@@ -16,10 +16,70 @@
 
     <div class="container">
       <h2>Your Books</h2>
-      <div id="list-container"></div>
+
+      <!-- Beginning of table -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Author</th>
+            <th class="hidden-xs" scope="col">Series</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>You Don't Know JS: Up & Going</td>
+            <td>Kyle Simpson</td>
+            <td class="hidden-xs">You Don't Know JS</td>
+            <td>
+              <button type="button" class="btn btn-xs btn-info">Edit</button>
+              <button type="button" class="btn btn-xs btn-danger">Remove</button>
+            </td>
+          </tr>
+          <tr>
+            <td>You Don't Know JS: ES6 & Beyond</td>
+            <td>Kyle Simpson</td>
+            <td class="hidden-xs">You Don't Know JS</td>
+            <td>
+              <button type="button" class="btn btn-xs btn-info">Edit</button>
+              <button type="button" class="btn btn-xs btn-danger">Remove</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Head First JavaScript Programming</td>
+            <td>Elisabeth Freeman</td>
+            <td class="hidden-xs"></td>
+            <td>
+              <button type="button" class="btn btn-xs btn-info">Edit</button>
+              <button type="button" class="btn btn-xs btn-danger">Remove</button>
+            </td>
+          </tr>
+          <tr>
+            <td>The Art of Happiness</td>
+            <td>Howard C. Cutler</td>
+            <td class="hidden-xs"></td>
+            <td>
+              <button type="button" class="btn btn-xs btn-info">Edit</button>
+              <button type="button" class="btn btn-xs btn-danger">Remove</button>
+            </td>
+          </tr>
+          <tr>
+            <td>The Alchemist</td>
+            <td>Paulo Coelho</td>
+            <td class="hidden-xs"></td>
+            <td>
+              <button type="button" class="btn btn-xs btn-info">Edit</button>
+              <button type="button" class="btn btn-xs btn-danger">Remove</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- End of table -->
+
       <button id="add-book-button" class="btn btn-primary" onclick="toggleAddBookForm()">Add Book</button>
+      
       <!-- Beginning of Form -->
-      <div id="form-container" class="panel hidden">
+      <div id="form-container" class="">
         <form id="add-book-form">
           <input type="hidden" id="book-id" value="" />
           <div class="form-group">
@@ -40,33 +100,6 @@
       </div>
       <!-- End of Form -->
     </div>
-
-    <!-- Beginning of table -->
-    <script id="list-template" type="text/x-handlebars-template">
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Title</th>
-            <th scope="col">Author</th>
-            <th class="hidden-xs" scope="col">Series</th>
-          </tr>
-        </thead>
-        <tbody>
-          {{#each books}}
-            <tr>
-              <td>{{title}}</td>
-              <td>{{author}}</td>
-              <td class="hidden-xs">{{series}}</td>
-              <td>
-                <button type="button" class="btn btn-xs btn-info" onclick="editBookClick('{{_id}}')">Edit</button>
-                <button type="button" class="btn btn-xs btn-danger" onclick="deleteBookClick('{{_id}}')">Remove</button>
-              </td>
-            </tr>
-          {{/each}}
-        </tbody>
-      </table>
-    </script>
-    <!-- End of table -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.8/handlebars.min.js"></script>
