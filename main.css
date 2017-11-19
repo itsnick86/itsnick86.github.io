@@ -10,13 +10,14 @@ HEADING
 }
 
 .main-header {
+  font-family: 'Happy Monkey', cursive;
   text-align: center;
   color: white;
   text-shadow: 2px 2px black;
   font-size: 1rem;
 }
 
-.main-header h3 {
+.main-header h1 {
   text-decoration: overline underline;
   padding-top: 10px;
 }
