@@ -1,0 +1,272 @@
+/********************************
+GENERAL
+*********************************/
+
+* {
+  box-sizing: border-box;
+}
+
+#wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+
+
+/********************************
+PSEUDO CLASSES
+*********************************/
+
+.main-header a.selected,
+.main-header a:visited {
+  color: #FFF;
+}
+
+.main-nav a:hover {
+  color: #174800
+}
+
+.main-footer a.selected {
+  color: #309500;
+}
+
+.more-animals a:visited,
+.secondary-container a:visited {
+  color: #246E00;
+}
+
+
+.more-animals a:hover,
+.secondary-container a:hover {
+  color: #309500;
+}
+
+
+
+/********************************
+HEADING
+*********************************/
+
+.main-header {
+  padding: 5px 0 0 0;
+  margin: 0 0 0px 0;
+  width: 100%;
+  background: url("../img/cooper.JPG") no-repeat center;
+  background-size: cover;
+  height: 850px;
+  text-shadow: 2px 2px black;
+}
+
+.website-name {
+  font-family: 'Baloo Bhaina', 'cursive';
+  color: #FFF;
+  font-size: 2.6em;
+  text-align: center;
+}
+
+.zoo {
+  font-family: 'Chewy', 'cursive';
+  letter-spacing: 0.05em;
+}
+
+
+
+/********************************
+NAVIGATION
+*********************************/
+
+.main-nav {
+  text-align: center;
+  padding: 5px 0;
+}
+
+.main-nav li {
+  font-family: 'Indie Flower', 'cursive';
+  font-size: 1.4em;
+  color: #FFF;
+  display: inline;
+  padding: 5px 5px;
+  margin: 0 0;
+}
+
+
+
+/********************************
+BODY
+*********************************/
+
+body {
+  border-bottom: 15px solid #246E00;
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2em;
+  font-family: 'Chewy', 'cursive';
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.75em;
+  font-family: 'Chewy', 'cursive';
+}
+
+h2,
+h3 {
+  margin-bottom: 0px;
+}
+
+p {
+  font-family: 'Indie Flower', 'cursive';
+  font-size: 1.25em;
+  margin-top: 5px;
+}
+
+.primary-container img {
+  border-radius: 15px;
+}
+
+.primary-container {
+  padding-bottom: 30px;
+  margin-top: 60px;
+  border-bottom: 3px solid #c0c0c0;
+}
+
+.secondary-container {
+  margin-top: 50px;
+}
+
+.more-animals {
+  font-family: 'Baloo Bhaina', 'cursive';
+  color: #174800;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.section-links {
+  text-decoration: underline;
+  color: #246E00;
+}
+
+
+
+/********************************
+FOOTER
+*********************************/
+
+.main-footer {
+  text-align: center;
+  padding: 25px 0 15px 0;
+  clear: both;
+  border-top: 3px solid #c0c0c0;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
+
+.main-footer a {
+  color: #246E00;
+  font-family: 'Indie Flower', 'cursive';
+}
+
+
+
+/********************************
+MEDIA QUERIES
+*********************************/
+
+@media screen and (min-width: 480px) {
+
+  .website-name {
+    margin-bottom: 0;
+  }
+
+  .main-nav {
+    padding: 0 0;
+    margin: 0 0;
+  }
+  
+  .main-nav li{
+    display: inline-block;
+    padding-left: 4%;
+  }
+
+  .daily-tails,
+  .the-crew {
+    width: 46.5%;
+    padding-bottom: 5%;
+  }
+
+  .daily-tails {
+    float: left;
+  }
+
+  .the-crew {
+    float: right;
+  }
+
+  .tails-pic {
+    float: left;
+  }
+
+  .tails-words {
+    float: right;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .main-header {
+    padding-bottom: 75px;
+  }
+
+  .website-name {
+    float: left;
+    width: 49%;
+    margin: 0 0;
+  }
+
+  .main-nav {
+    float: right;
+    width: 50%;
+    background-color: inherit;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    font-size: 1.55em;
+    padding-left: 2.25%;
+    margin-top: 20px;
+  }
+
+}
+
+
+
+/********************************
+FLOAT CLEARFIX
+*********************************/
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
