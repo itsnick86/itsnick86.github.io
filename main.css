@@ -17,3 +17,8 @@ BODY
 #projects {
   padding: 40px 0px 20px 0px;
 }
+
+.project-pic {
+  padding:1px;
+  border:2px solid #021a40;
+}
