@@ -7,8 +7,20 @@ HEADING
   height: 850px;
   background: url('img/keyboard-pic.jpg') no-repeat center;
   background-size: cover;
-
 }
+
+.main-header {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px black;
+  font-size: 1rem;
+}
+
+.main-header h3 {
+  text-decoration: overline underline;
+  padding-top: 10px;
+}
+
 
 /********************************
 BODY
@@ -16,6 +28,7 @@ BODY
 
 #projects {
   padding: 40px 0px 20px 0px;
+  text-decoration: underline;
 }
 
 .project-pic {
